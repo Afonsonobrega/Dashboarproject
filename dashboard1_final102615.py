@@ -65,6 +65,7 @@ valid_features = ['Hora', 'temp_C', 'solarRad_W/m2', 'Dia_da_Semana_Num', 'Aulas
 
 # Criar o aplicativo Dash
 app = dash.Dash(__name__)
+server=app.server
 
 # Layout
 app.layout = html.Div(style={'fontFamily': 'Arial, sans-serif', 'backgroundColor': '#f9f9f9', 'padding': '20px'}, children=[
